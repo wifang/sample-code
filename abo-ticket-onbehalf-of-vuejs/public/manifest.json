@@ -1,0 +1,17 @@
+{
+  "name": "Ticket on Behalf of",
+  "author": {
+    "name": "William Fang",
+    "email": "william.wei.fang.@amway.com",
+    "url": ""
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "ticket_sidebar": "assets/index.html"
+    }
+  },
+  "version": "1.0",
+  "frameworkVersion": "2.0"
+}

@@ -1,0 +1,62 @@
+{
+  "name": "get-abo-los-maps",
+  "version": "1.0.0",
+  "description": "ABO Los Map Get API",
+  "main": "handler.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "deploy": "serverless deploy",
+    "deploy:init": "serverless create_domain",
+    "lint": "tslint --project . --format verbose",
+    "start": "serverless invoke local --function get-abo-los-maps -p test/local_200_mock.json",
+    "start-404": "serverless invoke local --function get-abo-los-maps -p test/local_404_mock.json",
+    "start-401": "serverless invoke local --function get-abo-los-maps -p test/local_401_mock.json",
+    "start-400": "serverless invoke local --function get-abo-los-maps -p test/local_400_mock.json",
+    "test": "nyc mocha",
+    "test-old": "mocha -r ts-node/register ./**/*.spec.ts"
+  },
+  "nyc": {
+    "include": [
+      "src/*.ts",
+      "src/*.tsx"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "source-map-support": "^0.5.10"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.33",
+    "@types/chai": "^4.2.3",
+    "@types/mocha": "^5.2.7",
+    "@types/nock": "^11.1.0",
+    "@types/node": "^10.14.19",
+    "@types/node-fetch": "^2.5.2",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1",
+    "nock": "^11.3.5",
+    "nyc": "^14.1.1",
+    "serverless-webpack": "^5.2.0",
+    "ts-loader": "^5.3.3",
+    "ts-sinon": "^1.0.24",
+    "tslint": "^5.20.0",
+    "typescript": "^3.2.4",
+    "webpack": "^4.29.0"
+  },
+  "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
+  "license": "MIT"
+}

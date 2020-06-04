@@ -1,0 +1,15 @@
+{
+    "resource": "/",
+    "path": "dms/global/?affAbo[]=180-100038&period[]=201912&includeMap=true&includeAboAttr=true",
+    "httpMethod": "GET",
+    "requestContext": {
+        "stage": "dev"
+    },
+    "pathParameters": {
+        "market": "global",
+        "affiliatecode": "180",
+        "abonum": "100038",
+        "period": "201912"
+    },
+    "headers": { "Authorization": "bearer qy3e6q26dwq552b7spmyzzj7" }
+}

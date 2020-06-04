@@ -1,0 +1,380 @@
+html {
+  overflow: hidden;
+}
+
+#app {
+  padding: 1em;
+}
+
+#results {
+  margin-top: 2em;
+}
+
+#error {
+  margin-top: 2em;
+}
+
+#commands {
+  margin-top: 1em;
+  text-align: center;
+}
+
+button.command-button {
+  padding: 0 0.75em;
+  margin-top: 1em;
+}
+
+h1 {
+  font-size: 16pt;
+  font-weight: bold;
+  /* border-bottom: 1px solid; */
+  padding-bottom: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+div .framed {
+  border: 1px solid lightslategray;
+  padding: 1em;
+}
+
+div .left {
+  width: 40%;
+  float: left;
+}
+
+div .right {
+  width: 60%;
+  float: right;
+}
+
+label {
+  display: inline-block;
+  font-weight: bold;
+  width: 150px;
+}
+button {
+  padding: 0 0.25em;
+  margin-left: 0.25em;
+}
+
+.q {
+  color: rgb(250, 246, 246);
+
+  background-color: rgb(160, 154, 154);
+
+  width: 15px;
+
+  padding: 1px 1px 1px 1px;
+
+  font-weight: 800;
+
+  font-size: 10px;
+
+  line-height: 15px;
+
+  border-radius: 3px;
+
+  text-align: center;
+
+  height: 15px;
+}
+
+.n {
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(255, 182, 72);
+
+  width: 15px;
+
+  padding: 1px 1px 1px 1px;
+
+  font-weight: 800;
+
+  font-size: 10px;
+
+  line-height: 15px;
+
+  border-radius: 3px;
+
+  text-align: center;
+
+  height: 15px;
+}
+.c {
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(192, 192, 192);
+
+  width: 15px;
+
+  padding: 1px 1px 1px 1px;
+
+  font-weight: 800;
+
+  font-size: 10px;
+
+  line-height: 15px;
+
+  border-radius: 3px;
+
+  text-align: center;
+
+  height: 15px;
+}
+.p {
+  color: #ffff;
+
+  background-color: #037df4;
+
+  width: 15px;
+
+  padding: 1px 1px 1px 1px;
+
+  font-weight: 800;
+
+  font-size: 10px;
+
+  line-height: 15px;
+
+  border-radius: 3px;
+
+  text-align: center;
+
+  height: 15px;
+}
+
+.c-avatar {
+  display: inline-flex;
+
+  position: relative;
+
+  align-items: center;
+
+  justify-content: center;
+
+  transition: box-shadow 0.25s ease-in-out, color 0.1s ease-in-out;
+
+  margin: 0;
+
+  border-radius: 50%;
+
+  width: 40px;
+
+  height: 40px;
+
+  vertical-align: middle;
+
+  box-sizing: border-box;
+
+  color: transparent;
+}
+
+.c-avatar--lg {
+  font-weight: 500;
+
+  width: 50px;
+
+  height: 48px;
+}
+
+.c-avatar:before,
+.c-avatar > img,
+.c-avatar__img {
+  border-radius: inherit;
+
+  width: 100%;
+
+  height: 100%;
+}
+
+.c-avatar:before {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  transition: box-shadow 0.25s ease-in-out;
+
+  box-shadow: inset 0 0 0 2px;
+
+  content: "";
+}
+
+.active-s {
+  width: 72px;
+  padding: 2px 5px 3px 5px;
+
+  font-size: 14px;
+
+  text-transform: none;
+
+  margin-right: 2px;
+
+  text-shadow: none;
+
+  display: inline-block;
+
+  top: -1px;
+
+  letter-spacing: 0;
+
+  font-weight: 600;
+
+  background: #008000;
+
+  color: #ffff;
+}
+
+span.active-s {
+  display: flex;
+}
+
+svg#zd-svg-icon-12-check-lg-stroke {
+  width: 13px;
+
+  height: 14px;
+
+  margin-right: 2px;
+}
+
+.active-s span {
+  font-weight: 100;
+}
+
+svg#zd-svg-icon-12-phone-fill {
+  height: 12px;
+
+  margin: 0 auto;
+
+  width: 100%;
+}
+
+.phone {
+  width: 32px;
+
+  margin: 50px 0px 0px 0px;
+}
+
+.phone {
+  background: rgb(82, 86, 89);
+
+  width: 20px;
+
+  border-radius: 3px;
+}
+
+.c-tag.c-tag--blue {
+  background-color: #037df4;
+
+  color: #fff;
+
+  max-width: 16px;
+
+  padding: 0px 0px 0px 6px;
+
+  border-radius: 3px;
+}
+
+.c-tag > * {
+  min-width: 2em;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+.c-tag.c-tag--blue--Abo {
+  background-color: #037df4;
+
+  color: #fff;
+
+  max-width: 30px;
+
+  padding: 1px 1px 1px 4px;
+
+  border-radius: 3px;
+
+  font-size: 12px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.warning {
+  color: orange;
+
+  width: 25px;
+}
+
+svg#zd-svg-icon-12-alert-warning-fill {
+  width: 15px;
+}
+
+.blocked {
+  color: #d8000c;
+
+  width: 25px;
+}
+
+svg#zd-svg-icon-12-x-circle-fill {
+  width: 15px;
+}
+
+.edit {
+  width: 25px;
+
+  color: #888;
+}
+
+svg#zd-svg-icon-12-pencil-stroke {
+  width: 15px;
+  cursor: pointer;
+}
+
+.o {
+  color: #ffff;
+
+  background-color: #d8000c;
+
+  width: 15px;
+
+  padding: 1px 1px 1px 1px;
+
+  font-weight: 800;
+
+  font-size: 10px;
+
+  line-height: 15px;
+
+  border-radius: 3px;
+
+  text-align: center;
+
+  height: 15px;
+}
+
+.s {
+  color: #ffff;
+
+  background-color: rgb(169, 169, 169);
+
+  width: 15px;
+
+  padding: 1px 1px 1px 1px;
+
+  font-weight: 800;
+
+  font-size: 10px;
+
+  line-height: 15px;
+
+  border-radius: 3px;
+
+  text-align: center;
+
+  height: 15px;
+}

@@ -1,0 +1,11 @@
+{
+    "EUR": {
+        "url": "https://api-dv.amwayglobal.com/rest/v1/losv3/magicLosApp/details/"
+    },
+    "ANA": {
+        "url": "https://api-dv.amwayglobal.com/rest/v1/losv3/magicLosApp/details/"
+    },
+    "global": {
+        "url": "https://api-dv.amwayglobal.com/rest/v1/losv3/magicLosApp/details/"
+    }
+}
