@@ -32,7 +32,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "styled-components": "^4.4.1",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "vue": "^2.6.10",
     "vue-moment": "^4.0.0",
     "zendesk_app_framework_sdk": "^2.0.11"
